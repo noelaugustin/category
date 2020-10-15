@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mongo-pv
-  namespace: [student-name]
+  name: mongo-pv-bkgrp06-1
+  namespace: bkgrp06-1
   labels:
     type: local
 spec:
@@ -12,4 +12,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/data/db/[student-name]"
+    path: "/data/db/bkgrp06-1"
